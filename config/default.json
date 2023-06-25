@@ -1,0 +1,56 @@
+{
+  "server": {
+    "port": 4321
+  },
+  "env": "development",
+  "jwt": {
+    "secret": "theSecretKey4JWT",
+    "accessTokenExpiresIn": 15
+  },
+  "url": {
+    "qrCode": "https://frontend-jakas.ussbdpos.com/data/info/"
+  },
+  "origin": "http://localhost:4321",
+  "db": {
+    "connection": {
+      "jakas_poultry": {
+        "url": "mongodb+srv://sbexpress:Antor007@cluster0.p0mef.mongodb.net/jakas_poultry_1",
+        "collections": {
+          "users": "users",
+          "batch": "batch",
+          "feed": "feed",
+          "prescription": "prescription",
+          "order": "order",
+          "accounts": "accounts"
+        }
+      }
+    }
+  },
+  "log4js": {
+    "appenders": {
+      "out": {
+        "type": "stdout"
+      },
+      "console": {
+        "type": "console"
+      },
+      "everything": {
+        "type": "dateFile",
+        "pattern": "yyyy-MM-dd",
+        "keepFileExt": true,
+        "alwaysIncludePattern": true,
+        "numBackups": 15,
+        "filename": "D:/JS/jakas-poultry-backend/logs/everything.log"
+      }
+    },
+    "categories": {
+      "default": {
+        "appenders": [
+          "console",
+          "everything"
+        ],
+        "level": "debug"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+version: '3.0'
+services:
+  app:
+    container_name: jakas
+    build: ./
+    ports:
+      - 4321:4321

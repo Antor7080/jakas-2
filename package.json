@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node src/index.ts",
+    "start": "ts-node --esm ./src/index.ts",
     "dev": "nodemon src/index.ts",
     "prod": "node dist/index.js",
     "build": "tsc",

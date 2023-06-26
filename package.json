@@ -12,6 +12,9 @@
     "format-check": "npx prettier --check .",
     "format-write": "npx prettier --write ."
   },
+  "engines": {
+    "node": ">=14.20.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

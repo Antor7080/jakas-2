@@ -113,7 +113,7 @@ const updateOrder = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const audit_trails = {
       updated_by: user._id,
-      updated_detail: ` status change by ${user.name} (${user.phone})`,
+      updated_detail: `Status change by ${user.name} (${user.phone})`,
     };
 
     const order = await updateOrderById(orderId, req.body, audit_trails);
